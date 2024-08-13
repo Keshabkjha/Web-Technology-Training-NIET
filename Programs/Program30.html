@@ -1,0 +1,48 @@
+<!--Create a simple form to submit user input like his name, age, address and favourite subject, movie and singer.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<body>
+    <form action="submit.php" method="post" style="height: 500px; width: 300px; 
+    border: 5px; background-color: rgb(229, 179, 129);">
+    <h2>HTML Form</h2>
+    <br>
+    <!-- Name Input -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    <br>
+    <!--Age Input-->
+    <br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" placeholder="Enter your Age" required>
+    <br>
+    <!--Address Input-->
+    <br>
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" placeholder="Enter your Address" required>
+    <br>
+    <!--Favourite Subject-->
+    <br>
+    <label for="favourite subject"> Favourite subject</label>
+    <input type="text" id="subject" name="subject" placeholder="Enter your Favourite Subject" required>
+    <br>
+    <!--Movie Input-->
+    <br>
+    <label for="movie"> Favourite Movie</label>
+    <input type="text" id="movie" name="movie" placeholder="Enter your Favourite movie" required>
+    <br>
+    <!--Singer Input-->
+    <br>
+    <label for="singer"> Favourite Singer</label>
+    <input type="text" id="singer" name="singer" placeholder="Enter your Favourite singer" required>
+    <br>
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+    <input type="button" value="clear" name="clear">
+    </form>
+</body>
+</html>
