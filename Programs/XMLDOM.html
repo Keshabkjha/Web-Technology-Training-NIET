@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <title>XML DOM Example</title>
+</head>
+<body>
+    <div id="xmlDisplay"></div>
+    <button onclick="changeTitle()">Change Title</button>
+
+    <script>
+        // Simple XML string
+        const xmlString = `
+        <bookstore>
+            <book>
+                <title>Original Title</title>
+                <author>ABC</author>
+            </book>
+        </bookstore>`;
+6
+        // Parse XML
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlString, "application/xml");
+
+        // Display original title
+        document.getElementById("xmlDisplay").textContent = "Title: " + xmlDoc.getElementsByTagName("title")[0].textContent;
+
+        // Function to change the title
+        function changeTitle() {
+            xmlDoc.getElementsByTagName("title")[0].textContent = "New Title";
+            document.getElementById("xmlDisplay").textContent = "Title: " + xmlDoc.getElementsByTagName("title")[0].textContent;
+        }
+    </script>
+</body>
+</html>

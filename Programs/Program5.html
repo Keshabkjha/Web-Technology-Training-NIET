@@ -1,135 +1,309 @@
-<!--To Create a table to show your class time table-->
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Class Schedule</title>  
-    <style>  
-        body {  
-            font-family: Arial, sans-serif;  
-            margin: 20px;  
-        }  
-        table {  
-            width: 100%;  
-            border-collapse: collapse;  
-            margin-bottom: 20px;  
-        }  
+<!--To Create a table to show your class time table.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 4px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .rotate-text {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+        }
+
         .header {
             text-align: center;
-            font-weight: bold;
-            padding: 10px 0;
+            font-size: 14px;
         }
-        th, td {  
-            border: 1px solid #000;  
-            padding: 10px;  
-            text-align: center;  
-        }  
-        th {  
-            background-color: #f2f2f2;  
-        }  
-        h1 {  
-            text-align: center;  
-        }  
-    </style>  
-</head>  
-<body>  
+
+        .sub-header {
+            font-size: 12px;
+        }
+
+        .section-title {
+            background-color: lightgrey;
+            font-weight: bold;
+        }
+
+        .faculty-name {
+            font-size: 8px;
+        }
+    </style>
+</head>
+<body>
+
     <div class="header">
-        <h2>Noida Institute of Engineering & Technology, Greater Noida</h2>
-        <h3>Department of Computer Science and Engineering</h3>
-        <p>Time Table Odd Semester 2024-25</p>
-        <p>Class Coordinator: MS. SANA ANJUM</p>
+        <p>Noida Institute of Engineering & Technology, Greater Noida</p>
+        <p class="sub-header">Department of Computer Science and Engineering</p>
+        <p class="sub-header">Time Table Odd Semester 2024-25</p>
+        <p>Class Coordinator : MS. SANA ANJUM</p>
+        <p>W.E.F 29/07/2024</p>
     </div>
 
-<table>  
-    <thead>  
-        <tr>  
-            <th colspan="3">Day/Time</th>
-            <th >9:10 to 10:00 am</th>
-            <th >10:10 to 10:50 am</th>
-            <th >10:50 to 11:40 am</th>
-            <th >11:40 to 12:30 pm</th>
-            <th >12:30 to 1:30 pm</th>
-            <th >1:30 to 2:30 pm</th>
-            <th >2:30 to 3:20 pm</th>
-            <th >3:20 to 4:10 pm</th>
-            <th >4:10 to 5:00 pm</th>
-        </tr>  
-    </thead>  
-    <tbody>  
-        <tr>  
+    <table>
+        <tr>
+            <th rowspan="2">Day/Time</th>
+            <th colspan="2">9:10 to 10:10 am</th>
+            <th colspan="2">10:10 to 10:50 am</th>
+            <th colspan="2">10:50 to 11:40 am</th>
+            <th colspan="2">11:40 to 12:30 pm</th>
+            <th rowspan="2" class="rotate-text">LUNCH</th>
+            <th colspan="2">12:30 to 1:30 pm</th>
+            <th colspan="2">1:30 to 2:30 pm</th>
+            <th colspan="2">2:30 to 3:20 pm</th>
+            <th colspan="2">3:20 to 4:10 pm</th>
+            <th>4:10 to 5:00 pm</th>
+        </tr>
+        <tr>
+            <th>Sub.</th>
+            <th>Faculty/Room No.</th>
+            <th>Sub.</th>
+            <th>Faculty/Room No.</th>
+            <th>Sub.</th>
+            <th>Faculty/Room No.</th>
+            <th>Sub.</th>
+            <th>Faculty/Room No.</th>
+            <th>Sub.</th>
+            <th>Faculty/Room No.</th>
+            <th>Sub.</th>
+            <th>Faculty/Room No.</th>
+            <th>Sub.</th>
+            <th>Faculty/Room No.</th>
+            <th>Sub.</th>
+            <th>Faculty/Room No.</th>
+            <th>Sub.</th>
+            <th>Faculty/Room No.</th>
+        </tr>
+        <tr>
             <td>MON</td>
-            <td>Sub</td>
-            <tr><td>Faculty/Room No.</td></tr>
-            <td>DBMS L1B</td>  
-            <td>WEB</td>  
-            <td>DBMS L1B</td>  
-            <td>WEB</td>  
-            <td>COI</td>  
-        </tr>  
-        <tr>  
-            <td>11:00 - 12:00</td>  
-            <td>DBMS L1B</td>  
-            <td>WEB</td>  
-            <td>DBMS L1B</td>  
-            <td>WEB</td>  
-            <td>COI</td>  
-        </tr>  
-        <tr>  
-            <td>12:00 - 1:00</td>  
-            <td>COI</td>  
-            <td>DBMS L1B</td>  
-            <td>COI</td>  
-            <td>DBMS L1B</td>  
-            <td>WEB</td>  
-        </tr>  
-        <tr>  
-            <td>1:00 - 2:00</td>  
-            <td>Lunch</td>  
-            <td>Lunch</td>  
-            <td>Lunch</td>  
-            <td>Lunch</td>  
-            <td>Lunch</td>  
-        </tr>  
-        <tr>  
-            <td>2:00 - 3:00</td>  
-            <td>DBMS L1B</td>  
-            <td>WEB</td>  
-            <td>DBMS L1B</td>  
-            <td>WEB</td>  
-            <td>COI</td>  
-        </tr>  
-    </tbody>  
-</table>  
+            <td rowspan="2">DBMS LAB</td>
+            <td rowspan="2">SNA+VBT / D-202</td>
+            <td>CD</td>
+            <td>VKS</td>
+            <td rowspan="2">WT</td>
+            <td rowspan="2">TNA</td>
+            <td>DBMS</td>
+            <td>SNA</td>
+            <td>COI</td>
+            <td>SHM</td>
+            <td>CC1</td>
+            <td>RSP+RJT / D-002(B)</td>
+            <td rowspan="2">CD LAB</td>
+            <td rowspan="2">VKS+RCH / D-202</td>
+            <td rowspan="2">COI</td>
+            <td rowspan="2">SHM</td>
+            <td>DT</td>
+            <td>SHV</td>
+            <td>DBMS</td>
+            <td>SNA</td>
+        </tr>
+        <tr>
+            <td>TUE</td>
+            <td>DT</td>
+            <td>SHV</td>
+            <td>VKS</td>
+            <td>SNA</td>
+            <td>INTERNSHIP</td>
+            <td>RSP+PGY / D-003(B)</td>
+            <td>WT LAB</td>
+            <td>TNA+RJT / D-204</td>
+            <td>CD</td>
+            <td>VKS</td>
+        </tr>
+        <tr>
+            <td>WED</td>
+            <td>DT</td>
+            <td>SHV</td>
+            <td rowspan="2">DBMS</td>
+            <td rowspan="2">SNA</td>
+            <td rowspan="2">COI</td>
+            <td rowspan="2">SHM</td>
+            <td rowspan="2">AI (G1/G2) | CC | DJANGO</td>
+            <td rowspan="2">ANK / RSP / RKS / RTS D-204(D-002(B)/D-202/ D-003(B)</td>
+            <td rowspan="2">CD</td>
+            <td rowspan="2">VKS</td>
+            <td rowspan="2">ML (G1/G2) | CV | DP</td>
+            <td rowspan="2">VKB / HTS / VBT / PJK D-204(D-002(B)/D-202/ D-003(B)</td>
+            <td>DBMS</td>
+            <td>SNA</td>
+            <td>CC1</td>
+            <td>RSP+RJT / D-002(B)</td>
+            <td>COI</td>
+            <td>SHM</td>
+            <td>DT</td>
+            <td>SHV</td>
+        </tr>
+        <tr>
+            <td>THU</td>
+            <td rowspan="2">INTERNSHIP</td>
+            <td rowspan="2">RSP+PGY / D-003(B)</td>
+            <td rowspan="2">WT LAB</td>
+            <td rowspan="2">TNA+RJT / D-204</td>
+            <td rowspan="2">TRAINING</td>
+            <td>CD</td>
+            <td>VKS</td>
+        </tr>
+        <tr>
+            <td>FRI</td>
+            <td>DBMS</td>
+            <td>SNA</td>
+            <td>COI</td>
+            <td>SHM</td>
+            <td>DT</td>
+            <td>SHV</td>
+            <td>DBMS</td>
+            <td>SNA</td>
+        </tr>
+    </table>
 
-<h3>Faculty List</h3>  
-<table>  
-    <thead>  
-        <tr>  
-            <th>Code</th>  
-            <th>Abbreviation</th>  
-            <th>Faculty Name</th>  
-        </tr>  
-    </thead>  
-    <tbody>  
-        <tr>  
-            <td>AC001</td>  
-            <td>DB</td>  
-            <td>Dr. Smith</td>  
-        </tr>  
-        <tr>  
-            <td>AC002</td>  
-            <td>WT</td>  
-            <td>Prof. Johnson</td>  
-        </tr>  
-        <tr>  
-            <td>AC003</td>  
-            <td>COI</td>  
-            <td>Dr. Lee</td>  
-        </tr>  
-        <!-- Add more faculty rows as needed -->  
-    </tbody>  
-</table>  
+    <table>
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Sub Code</th>
+                <th>Abbreviation</th>
+                <th>Subject Name</th>
+                <th>Faculty Abbreviation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>ACS01514</td>
+                <td>CC</td>
+                <td>Introduction Cloud Computing (DE-1)</td>
+                <td>VKS</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>ACS05220</td>
+                <td>CV</td>
+                <td>Cloud Virtualization (DE-2)</td>
+                <td>VBT</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>ACS05314</td>
+                <td>DJANGO</td>
+                <td>Python web development with Django (DE-1)</td>
+                <td>RTS</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>ACSE0514</td>
+                <td>DP</td>
+                <td>Design Patterns (DE-2)</td>
+                <td>PJK</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>ACS0513</td>
+                <td>AI</td>
+                <td>Introduction to Artificial Intelligence (DE-1)</td>
+                <td>G1-ANK</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>ACSE0515</td>
+                <td>ML</td>
+                <td>Machine Learning (DE-2) G1 / G2</td>
+                <td>G1-VKB</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>ACS0505</td>
+                <td>WT</td>
+                <td>Web Technology</td>
+                <td>THA</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>ANC0501</td>
+                <td>COI</td>
+                <td>Constitution of India, Law and Engineering</td>
+                <td>SHM</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>ACSE0504</td>
+                <td>CD</td>
+                <td>Compiler Design</td>
+                <td>VKS</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>ACSE0506</td>
+                <td>DBMS</td>
+                <td>Database Management System</td>
+                <td>SNA</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>ACSE0514</td>
+                <td>DT</td>
+                <td>Design Thinking-II</td>
+                <td>SHV</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>ACSE0516</td>
+                <td>CD LAB</td>
+                <td>Compiler Design Lab</td>
+                <td>VKS+RCH</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>ACSE0556</td>
+                <td>DBMS LAB</td>
+                <td>Database Management System Lab</td>
+                <td>SNA+VBT</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>ACSE0555</td>
+                <td>WT LAB</td>
+                <td>Web Technology Lab</td>
+                <td>TNA+RJT</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>CC1</td>
+                <td>CC1</td>
+                <td>Competitive Coding Lab</td>
+                <td>RSP+RJT</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>ACS0559</td>
+                <td>INTERNSHIP</td>
+                <td>Internship Assessment</td>
+                <td>RSP+RJT</td>
+            </tr>
+        </tbody>
+    </table>
 
-</body>  
+    <div class="footer">
+        <p class="faculty-name">Signature of Time Table Coordinator</p>
+        <p class="faculty-name">Signature of HOD</p>
+    </div>
+
+</body>
 </html>

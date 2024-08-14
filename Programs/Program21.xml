@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Designing XML document that store various book data such as: book category, title, author, year and price -->
+<library>
+    <book>
+        <category>Fiction</category>
+        <title>The Great Adventure</title>
+        <author>Jane Novelist</author>
+        <year>2022</year>
+        <price>1999</price>
+    </book>
+    <book>
+        <category>Science</category>
+        <title>Quantum Mechanics Explained</title>
+        <author>Dr. Albert Physicist</author>
+        <year>2023</year>
+        <price>2999</price>
+    </book>
+    <!-- Add more book entries as needed -->
+</library>
