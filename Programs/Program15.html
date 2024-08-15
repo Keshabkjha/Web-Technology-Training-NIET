@@ -1,0 +1,45 @@
+<!--Use frames such that page is divided into 3 frames 20% on left to show contents of pages, 60% in center to show body of page, remaining on right to show remarks. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage Title</title>
+    <style>
+        
+        body {
+            display: flex;
+            justify-content: space-between;
+        }
+        .left-column, .center-column, .right-column {
+            width: 20%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .center-column {
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-column">
+        <h1>Your Name</h1>
+        <!-- Other content in this column -->
+    </div>
+    
+    <div class="center-column">
+        <h2>My Beautiful Photos</h2>
+        <img src="Keshabkjha.jpg" alt="My Photo">
+        <!-- Other content in this column -->
+    </div>
+    
+    <div class="right-column">
+        <h2>Remarks</h2>
+        <p>Here are some additional keshab Photos</p>
+        <img src="niet logo.png" alt="Additional Image">
+        <!-- Add more content as needed -->
+    </div>
+    
+</body>
+</html>

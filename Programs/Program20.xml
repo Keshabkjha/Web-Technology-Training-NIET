@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Creating a XML document that defines the self-descriptive tags -->
+<!DOCTYPE note SYSTEM "Program20.dtd">
+<note>
+    <to>John</to>
+    <from>Jane</from>
+    <heading>Meeting Reminder</heading>
+    <body>Don't forget our meeting at 3 PM!</body>
+</note>

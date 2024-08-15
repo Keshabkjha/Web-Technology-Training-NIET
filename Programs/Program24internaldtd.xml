@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Implement internal DTD-->
+<!DOCTYPE studentProfile [
+    <!ELEMENT studentProfile (name, age)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT age (#PCDATA)>
+]>
+
+<studentProfile>
+    <name>Keshab Kumar</name>
+    <age>21</age>
+</studentProfile>

@@ -1,0 +1,13 @@
+<!ELEMENT xml_key_components (element,attribute,text,comment)>
+<!ELEMENT element (name,description,example)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT example (book)>
+<!ELEMENT book (title,author,year)>
+<!ATTLIST book isbn NMTOKEN #IMPLIED>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT attribute (name,description,example)>
+<!ELEMENT text (name,description,example)>
+<!ELEMENT comment (description)>

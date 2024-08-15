@@ -1,0 +1,56 @@
+<!--Implementation in HTML5 that include native audio and video support without the need for Flash.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Audio and Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        audio, video {
+            width: 100%;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>HTML5 Audio and Video</h1>
+
+        <!-- Audio Player -->
+        <h2>Audio Player</h2>
+        <audio controls>
+            <source src="Sample.mp3" type="audio/mpeg">
+            <source src="whisper.mp3" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h2>Video Player</h2>
+        <video controls>
+            <source src="Rahul.mp4" type="video/mp4">
+            <source src="Sample.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+</body>
+</html>
+<!--Adobe Flash was a multimedia platform used for creating animations, games, and interactive web applications. It allowed for rich content delivery, including audio and video playback. However, it faced issues like performance, security vulnerabilities, and the rise of HTML5, which provided a more efficient way to create multimedia content. Adobe ended support for Flash Player on December 31, 2020, and most browsers have since removed Flash support.-->

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Design a XML document that describe the well-formed XML document -->
+<studentProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="Program26.xsd">
+    <personalInformation>
+        <name>Keshab Kumar</name>
+        <age>21</age>
+        <degree>Computer Science and Engineering</degree>
+        <university>Noida Institute of Engineering and Technology</university>
+    </personalInformation>
+    
+    <skills>
+        <skill>HTML</skill>
+        <skill>CSS</skill>
+        <skill>JavaScript</skill>
+    </skills>
+    
+    <hobbies>
+        <hobby>Playing Harmonium</hobby>
+        <hobby>Land Surveying</hobby>
+    </hobbies>
+</studentProfile>

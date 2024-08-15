@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--To Describe the various types of XML key components-->
+<?xml-model href="Program22.dtd"?>
 <xml_key_components>
   <!-- Element: Describes a basic XML element -->
   <element>

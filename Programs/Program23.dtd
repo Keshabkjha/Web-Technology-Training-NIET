@@ -1,0 +1,8 @@
+<!ELEMENT studentProfile (name, degree, university, skills, hobbies)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT degree (#PCDATA)>
+<!ELEMENT university (#PCDATA)>
+<!ELEMENT skills (skill+)>
+<!ELEMENT skill (#PCDATA)>
+<!ELEMENT hobbies (hobby+)>
+<!ELEMENT hobby (#PCDATA)>

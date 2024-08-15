@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Design XML DTD to define the structure and legal element and attribute of XML document-->
+<!DOCTYPE studentProfile SYSTEM "Program23.dtd">
+<studentProfile>
+    <name>Keshab Kumar</name>
+    <degree>Computer Science and Engineering</degree>
+    <university>Noida Institute of Engineering and Technology</university>
+    
+    <skills>
+        <skill>HTML</skill>
+        <skill>CSS</skill>
+        <skill>JavaScript</skill>
+    </skills>
+    
+    <hobbies>
+        <hobby>Playing Harmonium</hobby>
+        <hobby>Land Surveying</hobby>
+    </hobbies>
+</studentProfile>
