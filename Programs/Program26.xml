@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Design a XML document that describe the well-formed XML document -->
-<studentProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:noNamespaceSchemaLocation="Program26.xsd">
+<!DOCTYPE studentProfile SYSTEM "Program26.dtd">
+<studentProfile >
     <personalInformation>
         <name>Keshab Kumar</name>
         <age>21</age>
