@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <h1>XML Parser Example</h1>
+    <div id="output"></div>
+
+    <script>
+        // Sample XML data as a string
+        const xmlString = `
+            <bookstore>
+                <book category="children">
+                    <title lang="en">Harry Potter</title>
+                    <author>J K. Rowling</author>
+                    <year>2005</year>
+                    <price>29.99</price>
+                </book>
+                <book category="web">
+                    <title lang="en">Learning XML</title>
+                    <author>Erik T. Ray</author>
+                    <year>2003</year>
+                    <price>39.95</price>
+                </book>
+            </bookstore>
+        `;
+
+        // Parse the XML string into a DOM object
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlString, "application/xml");
+
+        // Find all book elements
+        const books = xmlDoc.getElementsByTagName('book');
+
+        // Output div
+        const outputDiv = document.getElementById('output');
+
+        // Iterate over each book and display its data
+        for (let i = 0; i < books.length; i++) {
+            const category = books[i].getAttribute('category');
+            const title = books[i].getElementsByTagName('title')[0].textContent;
+            const author = books[i].getElementsByTagName('author')[0].textContent;
+            const year = books[i].getElementsByTagName('year')[0].textContent;
+            const price = books[i].getElementsByTagName('price')[0].textContent;
+
+            outputDiv.innerHTML += `
+                <div>
+                    <strong>Category:</strong> ${category}<br>
+                    <strong>Title:</strong> ${title}<br>
+                    <strong>Author:</strong> ${author}<br>
+                    <strong>Year:</strong> ${year}<br>
+                    <strong>Price:</strong> ${price}<br>
+                    <hr>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>
