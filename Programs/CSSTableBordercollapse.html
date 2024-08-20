@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Table border collapse</Table>
+   </title>
+   <style type = "text/css">
+      table.one {border-collapse:collapse;}
+      table.two {border-collapse:separate;}
+      
+      td.a {
+         border-style:solid; 
+         border-width:5px; 
+         border-color:red; 
+         padding: 20px;
+      }
+      td.b {
+         border-style:solid; 
+         border-width:2px; 
+         border-color:cyan; 
+         padding:10px;
+      }
+   </style>
+</head>
+<body>
+   <table class = "one">
+      <caption>This is Keshab Kumar Collapse Border</caption>
+      <tr><td class = "a"> Cell A Collapse Example</td></tr>
+      <tr><td class = "b"> Cell B Collapse Example</td></tr>
+   </table>
+   <br />
+   
+   <table class = "two">
+      <caption>This is Aditya Jha separate Border</caption>
+      <tr><td class = "a"> Cell A Separate Example</td></tr>
+      <tr><td class = "b"> Cell B Separate Example</td></tr>
+   </table>
+</body>
+</html>

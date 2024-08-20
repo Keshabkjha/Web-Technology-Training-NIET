@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hover Table</title>
+	<style>
+		.hoverTable{
+		  width:100%; 
+		  border-collapse:collapse solid;
+				  
+	  }
+	  .hoverTable td{ 
+		  padding:7px; border:red 3px solid;
+	  }
+	  /* Define the default color for all the table rows */
+	  .hoverTable tr{
+		  background: white;
+	  }
+	  /* Define the hover highlight color for the table row */
+	  .hoverTable tr:hover {
+			background-color: magenta;
+	  }
+  </style>
+</head>
+<body>
+	<table class="hoverTable">
+		<tr>
+			<td>Text 1 A</td><td> Text 1 B</td><td>Text 1 C</td>
+		</tr>
+		<tr>
+			<td>Text 2A</td><td>Text 2B</td><td>Text 2C</td>
+		</tr>
+		<tr>
+			<td>Text 3A</td><td>Text 3B</td><td>Text 3C</td>
+		</tr>
+	</table>
+</body>
+</html>
