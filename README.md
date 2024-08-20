@@ -13,6 +13,8 @@ During this training, I gained a comprehensive understanding of various web tech
 - **TypeScript**: A strict syntactical superset of JavaScript that adds optional static typing to the language.
 - **PHP**: A popular general-purpose scripting language that is especially suited to web development.
 
+---
+
 ## Programs
 
 Below is the list of programs and tasks I completed during the training:
@@ -36,14 +38,22 @@ Below is the list of programs and tasks I completed during the training:
 17. Writing TypeScript code, including object-oriented concepts, decorators, and asynchronous programming.
 18. Implementing PHP scripts, handling files, directories, sessions, cookies, and more.
 
-The complete list of programs is available in the `list of programs.docx` file in this repository.
+The complete list of programs is available in the [list of programs.docx](https://github.com/Keshabkjha/Web-Technology-Training-NIET/blob/main/Programs/list%20of%20programs.docx) file in this repository.
+
+
+---
+
 
 ## Acknowledgements
 
 I would like to express my gratitude to my trainer and mentor, **Rajat Kumar Sir**, for his invaluable guidance and support throughout this training. You can check out his resources here:
 
-- [YouTube: Tech Learning with Rajat](https://www.youtube.com/@techlearningwithRajat)
-- [LinkedIn: Rajat Kumar](https://www.linkedin.com/in/rajat-kumar-789826120/)
+- **YouTube**: [Tech Learning with Rajat](https://www.youtube.com/@techlearningwithRajat)
+- **LinkedIn**: [Rajat Kumar](https://www.linkedin.com/in/rajat-kumar-789826120/)
+
+
+---
+
 
 ## Contact Information
 
