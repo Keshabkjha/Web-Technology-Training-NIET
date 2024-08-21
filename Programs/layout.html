@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        WebSite Layout Demonstration
+    </title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        header {
+            background-color: #6483f2;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        main {
+            display: flex;
+            justify-content: space-around;
+            padding: 0px;
+        }
+        
+        .left-column,
+        .right-column {
+            width: 200px;
+            background-color: #f1f784;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        
+        .main-content {
+            flex-grow: 1;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        footer {
+            background-color: #5ed0fd;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Website Header</h1>
+    </header>
+    <main>
+        <div class="left-column">
+            <h2>Left Column</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <!-- Add content for left column -->
+        </div>
+
+        <div class="main-content">
+            <h2>Main Content</h2>
+            <!-- Add main content here -->
+            <p>Add main content here Add main content here Add main content here</p>
+            <p>Add main content here Add main content here Add main content here</p>
+            <p>Add main content here Add main content here Add main content here</p>
+            <p>Add main content here Add main content here Add main content here</p>
+            <p>Add main content here Add main content here Add main content here</p>
+            <p>Add main content here Add main content here Add main content here</p>
+            <p>Add main content here Add main content here Add main content here</p>
+
+            <p>Add main content here Add main content here Add main content here</p>
+            <p>Add main content here Add main content here Add main content here</p>
+
+            <p>Add main content here Add main content here Add main content here</p>
+            <p>Add main content here Add main content here Add main content here</p>
+
+            <p>Add main content here Add main content here Add main content here</p>
+            <p>Add main content here Add main content here Add main content here</p>
+            <p>Add main content here Add main content here Add main content here</p>
+            <p>Add main content here Add main content here Add main content here</p>
+            <p>Add main content here Add main content here Add main content here</p>
+            <p>Add main content here Add main content here Add main content here</p>
+            <p>Add main content here Add main content here Add main content here</p>
+            <p>Add main content here Add main content here Add main content here</p>
+        </div>
+
+        <div class="right-column">
+            <h2>Right Column</h2>
+            <!-- Add content for right column -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

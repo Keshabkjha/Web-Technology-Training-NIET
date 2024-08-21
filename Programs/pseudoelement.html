@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Pseudo-Elements
+    </title>
+
+    <style>
+        p::first-line {
+            color: #b92626;
+            font-variant: small-caps;
+        }
+        
+        h1::first-letter {
+            color: #ff0000;
+            font-size: xx-large;
+        }
+        
+        p.intro::first-letter {
+            color: #ff0000;
+            font-size: 500%;
+        }
+        
+        h2::before {
+            content: url(smiley.jpg);
+        }
+        
+        h3::after {
+            content: url(smiley.jpg);
+        }
+        
+         ::marker {
+            color: green;
+            font-size: 23px;
+        }
+        
+         ::selection {
+            color: red;
+            background: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and more.</p>
+    <h1>I am adding style to this first letter of heading h1 </h1>
+    <p class="intro">This is an introduction.</p>
+    <h2>The ::before pseudo-element inserts content before the content of an element.</h2>
+    <h3>The ::after pseudo-element inserts content after the content of an element.</h3>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ol>
+    <div>This is some text in a div element. ::selection matches all the portion that is selected by the user</div>
+</body>
+
+</html>

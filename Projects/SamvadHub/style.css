@@ -111,6 +111,6 @@ nav .search-bar input[type="search"]::placeholder{
 
 nav .create{
     display: flex;
-    align-items: center;
+    align-items: xcenter;
     gap: 2rem;
 }

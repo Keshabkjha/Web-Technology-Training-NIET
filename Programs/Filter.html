@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        .image-container {
+            text-align: left;
+        }
+        
+        .image {
+            width: 300px;
+            height: auto;
+            filter: grayscale(0%);
+            transition: filter 1s ease;
+        }
+        
+        .filter-buttons {
+            margin-top: 20px;
+        }
+        
+        .filter-buttons button {
+            margin: 0 5px;
+            padding: 5px 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image-container">
+        <img src="river.jpg" alt="River Image" class="image" id="sample-image">
+    </div>
+    <div class="filter-buttons">
+        <button onclick="applyFilter('none')">None</button>
+        <button onclick="applyFilter('grayscale(100%)')">GrayScale</button>
+        <button onclick="applyFilter('sepia(100%)')">Sepia</button>
+        <button onclick="applyFilter('blur(5px)')">Blur</button>
+        <button onclick="applyFilter('brightness(150%)')">Brightness</button>
+    </div>
+    <script>
+        function applyFilter(filter) {
+            var image = document.getElementById('sample-image');
+            image.style.filter = filter;
+        }
+    </script>
+</body>
+
+</html>

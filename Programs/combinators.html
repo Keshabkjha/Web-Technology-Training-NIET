@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        CSS Combinators
+    </title>
+
+    <style>
+        /* Descendent Selector
+        
+        div p {
+            background-color: yellow;
+        } */
+        /* Child Selector
+        
+        div>p {
+            background-color: yellow;
+        } */
+        /* Adjacent Sibling Selector */
+        /* div+p {
+            background-color: yellow;
+        } */
+        /* General Sibling Selector */
+        
+        div~p {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <p> This is paragraph 1</p>
+    <div>
+        <p> This is paragraph 2 </p>
+
+    </div>
+    <code>
+        <p>This is paragraph 3</p>
+    </code>
+    <p>This is paragraph 4</p>
+    <p>This is paragraph 5</p>
+    <div>
+        <p>This is parahraph 6</p>
+    </div>
+    <p>This is paragraph 7</p>
+
+
+</body>
+
+</html>
