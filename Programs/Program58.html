@@ -1,0 +1,45 @@
+<!--PROGRAM 58:Implementing a program in Java script to implement augmented function.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Augmented Function Example</title>
+</head>
+<body>
+    <h1>Augmented Function Example</h1>
+
+    <p>Original Function:</p>
+    <pre id="originalFunctionOutput"></pre>
+
+    <p>Augmented Function:</p>
+    <pre id="augmentedFunctionOutput"></pre>
+
+    <script>
+        // Original function
+        function originalFunction(a, b) {
+            return a + b;
+        }
+
+        // Augmenting the original function
+        function augmentedFunction(a, b) {
+            // Call the original function
+            var result = originalFunction(a, b);
+
+            // Add some additional functionality
+            result = "The result is: " + result;
+
+            return result;
+        }
+
+        // Calling the original function
+        var originalResult = originalFunction(5, 3);
+        document.getElementById("originalFunctionOutput").textContent = originalResult;
+
+        // Calling the augmented function
+        var augmentedResult = augmentedFunction(50, 35);
+        document.getElementById("augmentedFunctionOutput").textContent = augmentedResult;
+    </script>
+</body>
+</html>
+
+
+

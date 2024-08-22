@@ -1,0 +1,70 @@
+OPERATORS
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Operator in JS</title>
+    </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        let a=5;
+        let b=10;
+        let sub=a-b;
+        console.log(sub);
+        //COMPARISON OPERATOR
+        let c = 5;
+        let d = 10;
+        let isEqual = c === d; //equality
+        let NotEqual = c != d;
+        let GreaterThanEqual = c >= d;
+        console.log(NotEqual);
+
+        //ASSIGNMENT OPERATOR
+        let num = 10;
+        num += 5; //num=num+5
+        num -= 3;
+        num *= 2;
+        num /= 8;
+        console.log(num);
+
+        //INCREMENT/DECREMENT OPERATOR
+        let counter = 5;
+        counter++; //post inc
+        ++counter; //pre inc
+        counter--; //post dec
+        --counter;
+        console.log(counter);
+
+        //STRING CONCATENATION
+        let firstname = 'Keshab';
+        let lastname = 'Kumar';
+        let name = firstname + ' ' + lastname;
+        console.log(name);
+        //TERNARY OPERATOR
+        let age = 15;
+        let vote = age >= 18 ? 'Yes' : 'No';
+        console.log(vote);
+
+        //TYPEOF OPERATOR
+        let value = 58.9998;
+        let valuetype = typeof value;
+        console.log(valuetype);
+
+        //LOGICAL OPERATOR
+        let isTrue = true;
+        let isFlase = false;
+        let Result = isTrue && isFlase; //logical and
+        console.log(Result);
+        let orResult = isTrue || isFlase; //logical or
+        console.log(orResult);
+        let notResult = !isTrue; //logical not
+        console.log(notResult);
+    </script>
+</body>
+
+</html>

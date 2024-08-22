@@ -1,0 +1,41 @@
+POP UP
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Popup Boxes Example</title>
+</head>
+
+<body>
+
+    <button onclick="showAlert()">Show Alert</button>
+    <button onclick="showConfirm()">Show Confirm</button>
+    <button onclick="showPrompt()">Show Prompt</button>
+
+    <script>
+        // Function to display an alert box
+        function showAlert() {
+            alert("This is an alert box!");
+        }
+
+        // Function to display a confirm box
+        function showConfirm() {
+            var result = confirm("Do you want to continue?");
+            if (result) {
+                alert("You clicked OK!");
+            } else {
+                alert("You clicked Cancel!");
+            }
+        }
+
+        // Function to display a prompt box
+        function showPrompt() {
+            var name = prompt("Please enter your name:", "");
+            if (name !== null) {
+                alert("Hello, " + name + "!");
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!--PROGRAM 61
+Write a program to implement Arrow function with default argument in ES6	-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arrow Function with Default Arguments</title>
+</head>
+<body>
+    <h1>Arrow Function with Default Arguments</h1>
+
+    <script>
+        // Arrow function with default arguments
+        const greet = (name = "Guest", time = "morning") => {
+            document.write(`<br><h1>Good ${time}, ${name}!<h1>`);
+        };
+
+        // Calling the function without providing arguments
+        greet(); // Output: "Good morning, Guest!"
+
+        // Calling the function with arguments
+        greet("Alice", "evening"); // Output: "Good evening, Alice!"
+    </script>
+</body>
+</html>
+
+

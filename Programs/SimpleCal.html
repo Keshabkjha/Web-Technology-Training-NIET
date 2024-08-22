@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Maths Calculations</title>
+</head>
+<body>
+    <h2>Calculate (a + b)<sup>3</sup></h2>
+    <form id="calcForm">
+        <label for="num1">Enter 1st number (a): </label>
+        <input type="number" id="num1" name="num1" required><br><br>
+        <label for="num2">Enter 2nd number (b): </label>
+        <input type="number" id="num2" name="num2" required><br><br>
+        <input type="submit" value="Calculate">
+    </form>
+    <h3>Result: <span id="Square"></span></h3>
+
+    <script>
+        function Square(a, b) {
+            let c = a * a * a;
+            let d = b * b * b;
+            let e = 3 * a * a * b;
+            let f = 3 * a * b * b;
+            let sq = c + d + e + f;
+            return sq;
+        }
+
+        document.getElementById("calcForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+            let a = parseFloat(document.getElementById("num1").value);
+            let b = parseFloat(document.getElementById("num2").value);
+            let result = Square(a, b);
+            document.getElementById("Square").innerText = result;
+        });
+    </script>
+</body>
+</html>

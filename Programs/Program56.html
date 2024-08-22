@@ -1,0 +1,32 @@
+<!--PROGRAM 56:Creating a java script code to implement ‘const’ keyword-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript 'const' Keyword Example</title>
+</head>
+<body>
+    <h1>JavaScript 'const' Keyword Example</h1>
+
+    <script>
+        // Using 'const' to declare constants
+        const pi = 3.14159;
+        const daysInAWeek = 7;
+
+        // Attempting to reassign a constant (this will result in an error)
+        // pi = 3.14; // Uncommenting this line will generate an error
+
+        // Displaying the constants' values
+        document.write("<p>Value of Pi: " + pi + "</p>");
+        document.write("<p>Days in a Week: " + daysInAWeek + "</p>");
+
+        // Using 'const' within a block
+        if (true) {
+            const blockScopedConst = "I'm in a block";
+            document.write("<p>Inside Block: " + blockScopedConst + "</p>");
+        }
+
+        // Attempting to access the block-scoped constant outside the block (this will result in an error)
+        // document.write("<p>Outside Block: " + blockScopedConst + "</p>"); // Uncommenting this line will generate an error
+    </script>
+</body>
+</html>

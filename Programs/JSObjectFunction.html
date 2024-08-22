@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Object Function</title>
+</head>
+<body>
+    <h3>Function</h3>
+
+    <script>
+        // Function
+        function sum(a, b) {
+            return a + b;
+        }
+        const s = sum(5, 8);
+        document.writeln(s);
+
+        // Arrow function
+        const m = (x, y) => x * y;
+        document.write(`<br><h1>Multiplication: ${m(3, 5)}</h1>`);
+    </script>
+    
+    <h3>JS Objects</h3>
+    <script>
+        const student = new Object();
+        student.name = "Keshab";
+        student.age = 22;
+        document.writeln("<br>Name: " + student.name);
+        document.writeln("<br>Age: " + student.age);
+
+        // Corrected the variable name in the commented line
+        // document.write("Welcome to: " + student.name + " your age is: " + student.age);
+    </script>
+
+    <h3>JS Anonymous Objects</h3>
+    <script>
+        const student1 = {};
+        student1.name = "Ravan";
+        student1.age = 32;
+        document.writeln("<br>Name: " + student1.name);
+        document.writeln("<br>Age: " + student1.age);
+
+        // Corrected the variable name in the commented line
+        // document.write("Welcome to: " + student1.name + " your age is: " + student1.age);
+    </script>
+
+</body>
+</html>

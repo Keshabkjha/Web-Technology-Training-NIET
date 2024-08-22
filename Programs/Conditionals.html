@@ -1,0 +1,53 @@
+CONDITIONALS
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conditionals in JS</title>
+    </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //if Statement
+        let age = 20;
+
+        if (age >= 18) {
+            document.write("You are an adult." + "<br>");
+        }
+
+        // //if-else Statement
+        let time = 5;
+
+        if (time < 12) {
+            document.write("Good morning!" + "<br>");
+        } else {
+            document.write("Good afternoon!" + "<br>");
+        }
+
+        //Switch
+        let day = "Monday";
+
+        switch (day) {
+            case "Tuesday":
+                document.write("It's the start of the workweek." + "<br>");
+                break;
+            case "Friday":
+                document.write("It's almost the weekend!" + "<br>");
+                break;
+            default:
+                document.write("It's an ordinary day." + "<br>");
+        }
+
+
+        //Ternary Operator
+        let isRaining = false;
+        let weather = isRaining ? "Take an umbrella" : "Enjoy the sunshine";
+        document.write(weather);
+    </script>
+</body>
+
+</html>

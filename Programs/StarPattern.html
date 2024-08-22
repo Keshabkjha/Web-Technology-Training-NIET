@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star pattern</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #pattern {
+            font-size: 20px;
+            line-height: 1.5;
+        }
+        #patt{
+            font-size: 20px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Star Pattern</h1>
+    <div id="pattern"></div>
+        <script>
+            function generateStarPattern(rows) {
+                let pattern = '';
+                for (let i = 1; i <= rows; i++) {
+                    pattern += '* '.repeat(i) + '<br>';
+                }
+                return pattern;
+            }
+            // Generate a star pattern with 5 rows
+            let rows = parseInt(prompt("Enter the number of rows:"));
+            document.getElementById('pattern').innerHTML = generateStarPattern(rows);
+        </script>
+    <div id="patt"></div>
+        <script>
+            function generatePattern(column) {
+                let patt = '';
+                for(let i = column; i >= 1; i--){
+                    patt += '* '.repeat(i) + '<br>';
+                }
+                return patt;
+            }
+            let column = parseInt(prompt("Enter the number of column:"))
+            document.getElementById('patt').innerHTML = generatePattern(column);
+        </script>
+
+</body>
+</html>

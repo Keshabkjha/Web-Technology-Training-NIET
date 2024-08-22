@@ -1,0 +1,34 @@
+<!--PROGRAM 55:Creating a java script code to implement ‘let’ keyword-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript 'let' Keyword Example</title>
+</head>
+<body>
+    <h1>JavaScript 'let' Keyword Example</h1>
+
+    <script>
+        // Using 'let' to declare variables
+        let message = "Hello, World!";
+        let age = 25;
+
+        // Reassigning values to the variables
+        message = "Hi there!";
+        age = 30;
+
+        // Displaying the variables' values
+        document.write("<p>Message: " + message + "</p>");
+        document.write("<p>Age: " + age + "</p>");
+
+        // Using 'let' within a block
+        if (true) {
+            let blockScopedVar = "I'm in a block";
+            document.write("<p>Inside Block: " + blockScopedVar + "</p>");
+        }
+
+        // Attempting to access the block-scoped variable outside the block
+        // This will result in an error because 'blockScopedVar' is not defined here
+         document.write("<p>Outside Block: " + blockScopedVar + "</p>"); // Uncommenting this line will generate an error
+    </script>
+</body>
+</html>

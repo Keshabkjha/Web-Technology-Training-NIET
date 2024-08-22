@@ -1,0 +1,58 @@
+<!--PROGRAM 67
+ Implementing a program in ES6 to implement all string methods. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Methods in ES6</title>
+</head>
+<body>
+    <h1>String Methods in ES6</h1>
+
+    <script>
+        // Original string
+        const originalString = "Hello, World!";
+
+        // Displaying the original string
+        document.write(`<p>Original String: "${originalString}"</p>`);
+
+        // String length
+        const stringLength = originalString.length;
+        document.write(`<p>String Length: ${stringLength}</p>`);
+
+        // Converting to lowercase
+        const lowercaseString = originalString.toLowerCase();
+        document.write(`<p>Lowercase String: "${lowercaseString}"</p>`);
+
+        // Converting to uppercase
+        const uppercaseString = originalString.toUpperCase();
+        document.write(`<p>Uppercase String: "${uppercaseString}"</p>`);
+
+        // Checking if a string contains a substring
+        const containsSubstring = originalString.includes("Hello");
+        document.write(`<p>Contains "Hello": ${containsSubstring}</p>`);
+
+        // Finding the index of a substring
+        const indexOfSubstring = originalString.indexOf("World");
+        document.write(`<p>Index of "World": ${indexOfSubstring}</p>`);
+
+        // Extracting a substring
+        const substring = originalString.substring(7, 12);
+        document.write(`<p>Substring: "${substring}"</p>`);
+
+        // Replacing a substring
+        const replacedString = originalString.replace("World", "Universe");
+        document.write(`<p>Replaced String: "${replacedString}"</p>`);
+
+        // Splitting a string into an array
+        const splitString = originalString.split(",");
+        document.write(`<p>Split String: ${JSON.stringify(splitString)}</p>`);
+
+        // Trimming whitespace
+        const stringWithWhitespace = "   Trim Me   ";
+        const trimmedString = stringWithWhitespace.trim();
+        document.write(`<p>Trimmed String: "${trimmedString}"</p>`);
+    </script>
+</body>
+</html>
+

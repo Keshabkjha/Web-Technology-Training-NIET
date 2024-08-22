@@ -1,0 +1,59 @@
+<!--PROGRAM 60	
+Design a HTML form validation using Java Script.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+</head>
+<body>
+    <h1>Form Validation Example</h1>
+
+    <form id="registrationForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            // Simple validation checks
+            if (name.trim() === "") {
+                alert("Name cannot be empty");
+                return false;
+            }
+
+            if (!isValidEmail(email)) {
+                alert("Invalid email address");
+                return false;
+            }
+
+            if (password.length < 8) {
+                alert("Password must be at least 8 characters");
+                return false;
+            }
+
+            // If all validations pass, the form is submitted
+            return true;
+        }
+
+        function isValidEmail(email) {
+            // A simple email validation using a regular expression
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return emailPattern.test(email);
+        }
+    </script>
+</body>
+</html>
+
