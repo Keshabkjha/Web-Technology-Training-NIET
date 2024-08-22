@@ -1,0 +1,56 @@
+loops and control statements
+<html>
+
+<body>
+    <h1>prompt Dialog boc</h1>
+    <button type="button" onclick="myprompt()">Myprompt</button>
+    <script>
+        function myprompt() {
+            let person = prompt("enter your name");
+            if (person != null)
+                document.write(<h1>welcome t0: ${person}<h1>);
+        }
+    </script>
+    <h1>Demonistration of loop</h1>
+    <h1>claculate the sum of 10 natural no</h1>
+    <h1>for loop</h1>
+    <script>
+        var sum = 0
+        for (var i = 1; i <= 10; i++) {
+            sum = sum + i;
+        }
+        document.write(<h2>sum=${sum}<h2><br>)
+    </script>
+    <h1> while loop</h1>
+    <script>
+        var sum = 0;
+        var i = 1;
+        while (i <= 10) {
+            sum = sum + i;
+            i++;
+        }
+        document.write(<h2>sum=${sum}<h2><br>);
+    </script>
+    <h1>do-while</h1>
+    <script>
+        var i = 1
+        var sum = 0
+        do {
+            sum = sum + i;
+            i++;
+        } while (i <= 10)
+        document.write(<h2>sum=${sum}<h2><br>);
+    </script>
+    <h1> contorl statement</h1>
+    <script>
+        var text;
+        if (confirm("press ok") == true) {
+            text = " ok";
+        } else {
+            text = " cancel";
+        }
+        document.write(<h1>your response is: ${text}<h1>);
+    </script>
+
+</body>
+</html>

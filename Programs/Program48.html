@@ -1,0 +1,76 @@
+PROGRAM 48: Creating a Java Script code to implement all data types. 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Operators</title>
+</head>
+<body>
+    <h1>JavaScript Operators</h1>
+
+    <script>
+        // Arithmetic Operators
+        let num1 = 10;
+        let num2 = 5;
+        document.write("Arithmetic Operators:<br>");
+        document.write(`num1 + num2 = ${num1 + num2}<br>`);
+        document.write(`num1 - num2 = ${num1 - num2}<br>`);
+        document.write(`num1 * num2 = ${num1 * num2}<br>`);
+        document.write(`num1 / num2 = ${num1 / num2}<br>`);
+        document.write(`num1 % num2 = ${num1 % num2}<br>`);
+        document.write(`++num1 = ${++num1}<br>`);
+        document.write(`num2-- = ${num2--}<br><br>`);
+
+        // Assignment Operators
+        let x = 5;
+        let y = 3;
+        document.write("Assignment Operators:<br>");
+        document.write(`x = ${x}<br>`);
+        x += y;
+        document.write(`x += y: ${x}<br>`);
+        x -= y;
+        document.write(`x -= y: ${x}<br>`);
+        x *= y;
+        document.write(`x *= y: ${x}<br>`);
+        x /= y;
+        document.write(`x /= y: ${x}<br>`);
+        x %= y;
+        document.write(`x %= y: ${x}<br><br>`);
+
+        // Comparison Operators
+        let a = 10;
+        let b = 5;
+        document.write("Comparison Operators:<br>");
+        document.write(`a == b: ${a == b}<br>`);
+        document.write(`a != b: ${a != b}<br>`);
+        document.write(`a > b: ${a > b}<br>`);
+        document.write(`a < b: ${a < b}<br>`);
+        document.write(`a >= b: ${a >= b}<br>`);
+        document.write(`a <= b: ${a <= b}<br><br>`);
+
+        // Logical Operators
+        let isTrue = true;
+        let isFalse = false;
+        document.write("Logical Operators:<br>");
+        document.write(`isTrue && isFalse: ${isTrue && isFalse}<br>`);
+        document.write(`isTrue || isFalse: ${isTrue || isFalse}<br>`);
+        document.write(`!isTrue: ${!isTrue}<br><br>`);
+
+        // Bitwise Operators
+        let bitwiseNum1 = 5; // Binary: 0101
+        let bitwiseNum2 = 3; // Binary: 0011
+        document.write("Bitwise Operators:<br>");
+        document.write(`bitwiseNum1 & bitwiseNum2: ${bitwiseNum1 & bitwiseNum2}<br>`); // AND
+        document.write(`bitwiseNum1 | bitwiseNum2: ${bitwiseNum1 | bitwiseNum2}<br>`); // OR
+        document.write(`bitwiseNum1 ^ bitwiseNum2: ${bitwiseNum1 ^ bitwiseNum2}<br>`); // XOR
+        document.write(`~bitwiseNum1: ${~bitwiseNum1}<br>`); // NOT
+        document.write(`bitwiseNum1 << 1: ${bitwiseNum1 << 1}<br>`); // Left Shift
+        document.write(`bitwiseNum1 >> 1: ${bitwiseNum1 >> 1}<br>`); // Right Shift
+    </script>
+</body>
+</html>
+
+
+
