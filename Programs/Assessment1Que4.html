@@ -1,0 +1,72 @@
+<!--Show the use of JavaScript POPUP Boxes i.e. alert(), confirm(), prompt()-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Popup Boxes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px 0;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>JavaScript Popup Boxes Example</h2>
+
+    <!-- Alert Box -->
+    <button onclick="showAlert()">Show Alert</button>
+
+    <!-- Confirm Box -->
+    <button onclick="showConfirm()">Show Confirm</button>
+
+    <!-- Prompt Box -->
+    <button onclick="showPrompt()">Show Prompt</button>
+
+    <p id="output"></p>
+
+    <script>
+        // Function to display an alert box
+        function showAlert() {
+            alert("This is an alert box!");
+        }
+
+        // Function to display a confirm box
+        function showConfirm() {
+            var result = confirm("Do you want to proceed?");
+            if (result) {
+                document.getElementById("output").innerText = "You clicked OK!";
+            } else {
+                document.getElementById("output").innerText = "You clicked Cancel!";
+            }
+        }
+
+        // Function to display a prompt box
+        function showPrompt() {
+            var name = prompt("Please enter your name:", "Your Name");
+            if (name != null) {
+                document.getElementById("output").innerText = "Hello, " + name + "!";
+            } else {
+                document.getElementById("output").innerText = "You canceled the prompt.";
+            }
+        }
+    </script>
+
+</body>
+</html>

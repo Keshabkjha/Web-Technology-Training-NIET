@@ -1,0 +1,134 @@
+<!--Implement Html Lists and Tables using CSS.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Lists and Tables</title>
+    <style>
+        /* General List Styles */
+        .styled-list {
+            list-style: none;
+            padding-left: 0;
+            margin-left: 0;
+        }
+
+        .styled-list li {
+            background: #978a8a;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+
+        /* Add custom bullet points for unordered list */
+        .styled-list ul li:before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* Add custom numbering for ordered list */
+        .styled-list ol {
+            counter-reset: custom-counter;
+        }
+
+        .styled-list ol li {
+            counter-increment: custom-counter;
+            position: relative;
+        }
+
+        .styled-list ol li:before {
+            content: counter(custom-counter) ".";
+            position: absolute;
+            left: -2em;
+            color: #3498db;
+            font-weight: bold;
+        }
+
+        /* Table Styles */
+        .styled-table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 18px;
+            min-width: 400px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+            font-family: Arial, sans-serif;
+        }
+
+        .styled-table th,
+        .styled-table td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 12px 15px;
+        }
+
+        .styled-table th {
+            background-color: #3498db;
+            color: #ffffff;
+        }
+
+        .styled-table tr {
+            background-color: #f3f3f3;
+        }
+
+        .styled-table tr:nth-child(even) {
+            background-color: #e9e9e9;
+        }
+
+        .styled-table tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <h2>Styled Unordered List</h2>
+    <ul class="styled-list">
+        <li>Keshab</li>
+        <li>CSE B</li>
+        <li>0221CSE013</li>
+        <li>2201330100132</li>
+    </ul>
+
+    <h2>Styled Ordered List</h2>
+    <ol class="styled-list">
+        <li>Rajnish</li>
+        <li>CSE B</li>
+        <li>0221CSE123</li>
+        <li>2201330100203</li>
+    </ol>
+
+    <h2>Styled Table</h2>
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 3, Cell 1</td>
+                <td>Row 3, Cell 2</td>
+                <td>Row 3, Cell 3</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

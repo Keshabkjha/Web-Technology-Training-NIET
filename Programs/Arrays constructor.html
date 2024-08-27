@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Display</title>
+</head>
+<body>
+    <h1>Fruits List</h1>
+    <ul id="fruits-list"></ul>
+
+    <script>
+        // Define an array using the new keyword and array constructor
+        let fruits = new Array("apple", "banana", "cherry", "date", "elderberry");
+        // Function to display array elements in the HTML
+        
+        function displayArray(arr){
+           let list= document.getElementById('fruits-list');
+           for(let i=0;i<arr.length;i++){
+            let listItem=document.createElement('li');
+            listItem.textContent=arr[i];
+            list.appendChild(listItem);
+           } 
+        }
+
+        // Call the function to display the array contents
+        displayArray(fruits);
+    </script>
+</body>
+</html>
