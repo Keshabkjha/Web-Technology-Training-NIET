@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .calculator {
+            border: 3px solid #000;
+            border-radius: 15px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 400px;
+        }
+        .display {
+            width: 100%;
+            padding: 20px;
+            text-align: right;
+            font-size: 2rem;
+            border-bottom: 3px solid #000;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .previous-operand {
+            color: #888;
+            font-size: 1.2rem;
+        }
+        .current-operand {
+            font-size: 2.5rem;
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        .button {
+            padding: 25px;
+            font-size: 1.8rem;
+            border: 1px solid #000;
+            background-color: #e0e0e0;
+            cursor: pointer;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #d0d0d0;
+        }
+        .button.clear {
+            grid-column: span 2;
+            background-color: #ff6666;
+        }
+        .button.equal {
+            grid-column: span 2;
+            background-color: #66ff66;
+        }
+        .button.delete {
+            grid-column: span 2;
+            background-color: #ff9933;
+        }
+        .button.advanced {
+            background-color: #66b3ff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="calculator">
+        <div class="display">
+            <div class="previous-operand" id="previous-operand"></div>
+            <div class="current-operand" id="current-operand">0</div>
+        </div>
+        <div class="buttons">
+            <div class="button advanced" onclick="calculateSquareRoot()">√</div>
+            <div class="button advanced" onclick="calculateSquare()">x²</div>
+            <div class="button advanced" onclick="calculatePercentage()">%</div>
+            <div class="button" onclick="chooseOperation('/')">/</div>
+            <div class="button" onclick="appendNumber('7')">7</div>
+            <div class="button" onclick="appendNumber('8')">8</div>
+            <div class="button" onclick="appendNumber('9')">9</div>
+            <div class="button" onclick="chooseOperation('*')">*</div>
+            <div class="button" onclick="appendNumber('4')">4</div>
+            <div class="button" onclick="appendNumber('5')">5</div>
+            <div class="button" onclick="appendNumber('6')">6</div>
+            <div class="button" onclick="chooseOperation('-')">-</div>
+            <div class="button" onclick="appendNumber('1')">1</div>
+            <div class="button" onclick="appendNumber('2')">2</div>
+            <div class="button" onclick="appendNumber('3')">3</div>
+            <div class="button" onclick="chooseOperation('+')">+</div>
+            <div class="button" onclick="appendNumber('0')">0</div>
+            <div class="button" onclick="appendNumber('.')">.</div>
+            <div class="button clear" onclick="clearDisplay()">C</div>
+            <div class="button equal" onclick="compute()">=</div>
+            <div class="button delete" onclick="deleteLast()">⌫</div>
+        </div>
+    </div>
+
+    <script>
+        let currentOperand = '';
+        let previousOperand = '';
+        let operation = undefined;
+
+        const previousOperandElement = document.getElementById('previous-operand');
+        const currentOperandElement = document.getElementById('current-operand');
+
+        function appendNumber(number) {
+            if (number === '.' && currentOperand.includes('.')) return;
+            currentOperand = currentOperand.toString() + number.toString();
+            updateDisplay();
+        }
+
+        function chooseOperation(op) {
+            if (currentOperand === '') return;
+            if (previousOperand !== '') {
+                compute();
+            }
+            operation = op;
+            previousOperand = currentOperand;
+            currentOperand = '';
+            updateDisplay();
+        }
+
+        function compute() {
+            let computation;
+            const prev = parseFloat(previousOperand);
+            const current = parseFloat(currentOperand);
+            if (isNaN(prev) || isNaN(current)) return;
+            switch (operation) {
+                case '+':
+                    computation = prev + current;
+                    break;
+                case '-':
+                    computation = prev - current;
+                    break;
+                case '*':
+                    computation = prev * current;
+                    break;
+                case '/':
+                    computation = prev / current;
+                    break;
+                default:
+                    return;
+            }
+            currentOperand = computation;
+            operation = undefined;
+            previousOperand = '';
+            updateDisplay();
+        }
+
+        function clearDisplay() {
+            currentOperand = '';
+            previousOperand = '';
+            operation = undefined;
+            updateDisplay();
+        }
+
+        function updateDisplay() {
+            currentOperandElement.innerText = currentOperand || '0';
+            previousOperandElement.innerText = previousOperand
+                ? `${previousOperand} ${operation || ''}`
+                : '';
+        }
+
+        function calculateSquareRoot() {
+            if (currentOperand === '') return;
+            currentOperand = Math.sqrt(parseFloat(currentOperand)).toString();
+            updateDisplay();
+        }
+
+        function calculateSquare() {
+            if (currentOperand === '') return;
+            currentOperand = (parseFloat(currentOperand) ** 2).toString();
+            updateDisplay();
+        }
+
+        function calculatePercentage() {
+            if (currentOperand === '') return;
+            currentOperand = (parseFloat(currentOperand) / 100).toString();
+            updateDisplay();
+        }
+
+        function deleteLast() {
+            if (currentOperand === '') return;
+            currentOperand = currentOperand.toString().slice(0, -1);
+            updateDisplay();
+        }
+    </script>
+
+</body>
+</html>

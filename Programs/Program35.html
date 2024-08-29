@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Positioning</title>
+    <style>
+        .content-box {
+            position: relative;
+            width: 300px; /* Adjust the width as needed */
+            height: 200px; /* Adjust the height as needed */
+            border: 1px solid #000;
+            overflow: hidden;
+        }
+
+        .content-box img {
+            position: absolute;
+            top: 10%; /* 10% from the top */
+            left: 5px; /* 5px from the left */
+            width: calc(100% - 5px); /* Adjust width to fit the content box */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <div class="content-box">
+        <img src="river.jpg" alt="Sample Image">
+    </div>
+</body>
+</html>
