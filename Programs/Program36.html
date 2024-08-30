@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Even and Odd Rows</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        /* Styling odd rows */
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        /* Styling even rows */
+        tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h2>Styled Table</h2>
+    <table>
+        <tr>
+            <th>Course</th>
+            <th>Department</th>
+            <th>Section</th>
+        </tr>
+        <tr>
+            <td>B.Tech</td>
+            <td>CSE</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>B.Tech</td>
+            <td>IT</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>B.Tech</td>
+            <td>ECE</td>
+            <td>A</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SamvadHub</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #444;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            clear: both;
+        }
+
+        /* Layout 1: Flexbox for Home Page */
+        #home {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 300px;
+            background-color: #f4f4f4;
+        }
+
+        #home div {
+            flex: 1;
+            margin: 0 10px;
+            text-align: center;
+        }
+
+        /* Layout 2: Grid for About Us Page */
+        #about {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            background-color: #eaeaea;
+        }
+
+        #about div {
+            background-color: #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Layout 3: Floats for Contact Us Page */
+        #contact {
+            background-color: #f9f9f9;
+        }
+
+        .contact-info, .contact-form {
+            width: 48%;
+            float: left;
+            margin: 1%;
+            padding: 20px;
+            background-color: #ddd;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SamvadHub</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div>
+            <h2>Welcome to SamvadHub</h2>
+            <p>A social media designed and developed by Keshab Kumar.</p>
+        </div>
+        <div>
+            <h3>Our Mission</h3>
+            <p>Delevering the best possible features to our users/</p>
+        </div>
+        <div>
+            <h3>Join Us</h3>
+            <p>Become part of our growing community.</p>
+            <a href="https://www.linkedin.com/in/keshabkjha/">Community</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div>
+            <h3>Our Motive</h3>
+            <p>Giving people what they need</p>
+        </div>
+        <div>
+            <h3>Our Team</h3>
+            <p>We welcome you all to our team.</p>
+        </div>
+        <div>
+            <h3>Our Values</h3>
+            <p>Integrity, innovation, and excellence.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="clearfix">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Phone: 8002648400</p>
+            <p>Email: developerkeshab@gmail.com</p>
+            <p>Address: Knowledge Park II , Greater Noida, India</p>
+        </div>
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <p><input type="text" name="name" placeholder="Your Name"></p>
+                <p><input type="email" name="email" placeholder="Your Email"></p>
+                <p><textarea name="message" placeholder="Your Message"></textarea></p>
+                <p><button type="submit">Send</button></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 KeshabKjha. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
