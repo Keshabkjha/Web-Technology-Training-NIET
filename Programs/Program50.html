@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Example</title>
+    <script>
+        function onSelectExample() {
+            alert('Text has been selected!');
+        }
+
+        function onLoadExample() {
+            alert('Page has been loaded!');
+        }
+    </script>
+</head>
+<body onload="onLoadExample()">
+    <h1>Event Example</h1>
+    <textarea onselect="onSelectExample()" rows="4" cols="50">
+        Select some text in this area.
+    </textarea>
+</body>
+</html>
