@@ -1,0 +1,53 @@
+<!--Implementing a program in Java Script to create object by using object literal, creating instance and object constructor. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Object Creation</title>
+    <script>
+        // 1. Creating an object using an Object Literal
+        const personLiteral = {
+            name: 'Keshab',
+            age: 21,
+            greet: function() {
+                console.log(`Hello, my name is ${this.name}.`);
+            }
+        };
+
+        // 2. Creating an object using a Constructor Function
+        function PersonConstructor(name, age) {
+            this.name = name;
+            this.age = age;
+            this.greet = function() {
+                console.log(`Hello, my name is ${this.name}.`);
+            };
+        }
+
+        // 3. Creating an instance of the constructor
+        const personInstance1 = new PersonConstructor('Kumar', 22);
+        const personInstance2 = new PersonConstructor('Rohit', 23);
+
+        // Running the program on page load
+        window.onload = function() {
+            // Using object literal
+            console.log('Object Literal:');
+            console.log(personLiteral);
+            personLiteral.greet();
+
+            // Using constructor function instances
+            console.log('Constructor Function Instance 1:');
+            console.log(personInstance1);
+            personInstance1.greet();
+
+            console.log('Constructor Function Instance 2:');
+            console.log(personInstance2);
+            personInstance2.greet();
+        };
+    </script>
+</head>
+<body>
+    <h1>JavaScript Object Creation Example</h1>
+    <p>Open the console (F12 in most browsers) to see the output.</p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookstore [
+    <!ELEMENT bookstore (book+)>
+    <!ELEMENT book (title, author, year, price)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT year (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ATTLIST book category CDATA #REQUIRED>
+]>
+
+<bookstore>
+    <book category="Fiction">
+        <title>Programming Using Python</title>
+        <author>Mr. Kumar</author>
+        <year>1925</year>
+        <price>10.99</price>
+    </book>
+    <book category="Science">
+        <title>Java using Python</title>
+        <author>Mrs Kumari</author>
+        <year>1988</year>
+        <price>15.00</price>
+    </book>
+</bookstore>
+<?xml-stylesheet type="text/css" href="style.css"?>

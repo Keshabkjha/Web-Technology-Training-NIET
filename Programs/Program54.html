@@ -1,0 +1,35 @@
+<!--Implementing a Java Script program to implement onClick and onSubmit event-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onClick and onSubmit Example</title>
+    <script>
+        // Function to be called when button is clicked
+        function handleClick() {
+            alert('Button was clicked!');
+        }
+
+        // Function to handle form submission
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent form from submitting
+            alert('Form submitted successfully!');
+        }
+    </script>
+</head>
+<body>
+
+    <h2>onClick Event</h2>
+    <button type="button" onclick="handleClick()">Click Me!</button>
+
+    <h2>onSubmit Event</h2>
+    <form onsubmit="handleSubmit(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
