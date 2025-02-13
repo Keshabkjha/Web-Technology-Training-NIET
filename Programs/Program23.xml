@@ -5,13 +5,11 @@
     <name>Keshab Kumar</name>
     <degree>Computer Science and Engineering</degree>
     <university>Noida Institute of Engineering and Technology</university>
-    
     <skills>
         <skill>HTML</skill>
         <skill>CSS</skill>
         <skill>JavaScript</skill>
     </skills>
-    
     <hobbies>
         <hobby>Playing Harmonium</hobby>
         <hobby>Land Surveying</hobby>
