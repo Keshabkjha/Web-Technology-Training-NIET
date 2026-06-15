@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAx</title>
+</head>
+<body>
+    <h1> Reading text file using AJAX</h1>
+    <div id="notes">
+        <h2>The XMLHttpRequest Object</h2>
+        <button type="button" onclick="loadDoc()">Change Content</button>
+
+    </div>
+    <script>
+        function loadDoc() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function() {
+                document.getElementById("notes").innerHTML =
+                this.responseText;
+            }
+            xhttp.open("GET", "ajax_notes.txt");
+
+            // This is an alternative way to handle the request state change
+
+            xhttp.onreadystatechange = function() {
+                if (this.readyState === XMLHttpRequest.DONE) {
+                    if (this.status === 200) {
+                        document.getElementById("notes").innerHTML =
+                        this.responseText;
+                    } else {
+                        console.error("Error: " + this.status);
+                    }
+                }
+            }
+            xhttp.send(); // call the sending
+        }
+    
+    </script>
+</body>
+</html>

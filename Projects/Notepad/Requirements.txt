@@ -1,0 +1,7 @@
+npm init
+npm install express
+npm install socket.io
+node server.js
+npm install dotenv
+
+

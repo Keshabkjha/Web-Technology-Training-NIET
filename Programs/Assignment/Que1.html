@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>JS DOM paragraph style</title>
+</head> 
+<body>
+<p id="para">JavaScript is Server side scripting language for web development that enables dynamic and interactive user experiences.</p> 
+<div>
+<button id="jsstyle" onclick="js_style()">Style</button>
+</div>
+
+<script>
+function js_style() {
+    let para = document.getElementById('para');
+    para.style.backgroundColor = 'yellow';
+    para.style.color = 'green';
+    para.style.fontSize = '25px';
+
+    let newPara = document.createElement('p');
+    newPara.textContent = "Javascript is also used as Client side scripting language.";
+    newPara.style.backgroundColor = 'green';
+    newPara.style.color = 'yellow';
+    newPara.style.fontSize = '25px';
+
+    document.body.appendChild(newPara);
+}
+</script>
+</body>
+</html>

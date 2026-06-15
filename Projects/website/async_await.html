@@ -1,0 +1,22 @@
+<script>
+function method() {
+    let first_promise = 
+        new Promise((resolve, reject) => resolve("Hello"));
+    let second_promise = 
+        new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(" World...");
+        }, 8000);
+    });
+    let combined_promise = 
+        Promise.all([first_promise, second_promise]);
+    return combined_promise;
+}
+// async function calls or executes the normal function 
+async function display() {
+    let data = await method();
+    console.log(data);
+}
+
+display();
+</script>

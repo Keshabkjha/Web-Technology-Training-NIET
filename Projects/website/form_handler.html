@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Handling</title>
+    <style>
+        input{
+            width: 100%;
+            border-radius: 4px;
+            color: black;
+            border-radius: 10px;
+            background-color: lightcoral;
+        }
+        input[type="submit"]
+        {
+          background-color: blue; 
+          counter-reset: white;
+          font-weight: bold; 
+        }
+        .myform
+        {
+            width: 400px;
+        }
+        input[type="email"]:hover
+        {
+            background-color: greenyellow;
+        }
+        input[type="password"]:hover
+        {
+            background-color: lightgreen;
+            color: black;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>User Form</h1>
+    <form action="" method="post" class="myform">
+        <div>
+        <label>
+            User Name
+        </label>
+        <input type="text" name="username" placeholder="yourname" required>
+        </div>
+        <div>
+        <label>
+            Age
+        </label>
+        <input type="number" name="age" placeholder="yourage" required>
+        </div>
+        <div>
+        <label>
+            Gender
+        </label>
+        <div>
+        <select name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        </div>
+        <div>
+        <label>
+            Email Address
+        </label>
+        <input type="email" name="email" placeholder="youremail@example.com" required>
+        </div>
+        <div>
+        <label> Place for Work </label>
+        <div>
+        <Select name="city" id ="city">
+            <option value="New Delhi"> New Delhi</option>
+            <option value="Mumbai"> Mumbai</option>
+            <option value="Bangalore"> Bangalore</option>
+            <option value="Chennai"> Chennai</option>
+            <option value="Kolkata"> Kolkata</option>
+            <option value="Other"> Other</option>
+        </Select>
+        </div>
+        </div>
+        <div>
+        <label>
+            Password
+        </label>
+        <input type="password" name="password" placeholder="yourpassword" required>
+        </div>
+        <label>
+            Confirm Password
+        </label>
+        <input type="password" name="confirmPassword" placeholder="confirm yourpassword" required>
+        <br>
+        <br>
+        <input type="submit" name="submit" value="Submit">
+
+    </form>
+</body>
+</html>

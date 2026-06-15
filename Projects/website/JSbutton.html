@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Javascript</title></head>
+<body>
+    <h1>Changing the color style of Para</h1>
+    <p id="para1">Welcome to dynamic javascript</p>
+    <button id = "colorButton">Click</button>
+    <br>
+    <br>
+    <script>
+        const mypara=document.getElementById("para1");
+        const colrButn=document.getElementById("colorButton");
+        colrButn.addEventListener('click',function(){
+            mypara.style.color='blue';
+
+        });
+
+        const newpara=document.createElement('p');
+        newpara.textContent="Para created dynamically."
+        document.body.appendChild(newpara);
+
+        const myInput = document.getElementById('myInput');
+        // Adding an input event listener
+        myInput.addEventListener('input', function() {
+    // Updating a paragraph with the input value
+    document.getElementById('inputValue').textContent = myInput.value;
+});
+
+
+    </script>
+</body>
+</html>

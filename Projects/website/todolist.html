@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>log the data todo from website url </h1>
+<script>
+   function handleResponse() {
+   // Creating XMLHttpRequest object
+   var qhttp = new XMLHttpRequest();
+   // Creating call back function
+   qhttp.onreadystatechange = function() {
+      if (qhttp.readyState == 4){
+         if(qhttp.status == 200){
+            // Display the response
+            console.log(qhttp.responseText)
+            document.getElementById("sample").innerHTML = qhttp.responseText
+         }else{
+            console.log("Found Error: ", qhttp.status)
+         }
+      }
+   };
+   // Open the given file
+   qhttp.open("GET", "https://jsonplaceholder.typicode.com/todos", true);
+   // Sending request to the server 
+   qhttp.send()
+}
+</script>
+<h2>Display Data</h2>
+<button type="button" onclick="handleResponse()">Submit</button>
+<div id="sample"></div>
+</body>
+</html>

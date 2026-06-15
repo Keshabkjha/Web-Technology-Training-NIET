@@ -1,0 +1,10 @@
+AJAX stands for Asynchronous JavAscript and XML. 
+
+AJAX is not a programming language or technology, but it is a Mechanism or Technique that's a combination of multiple web-related technologies like JavaScript, xml, html etc.
+
+The AJAX model allows web developers to create web applications that are able to dynamically interact with the user. 
+
+It will also be able to quickly make a background call to web servers to retrieve the required application data. Then update the small portion of the web page without refreshing the whole web page.
+
+AJAX applications are much more faster and responsive as compared to traditional web applications. 
+

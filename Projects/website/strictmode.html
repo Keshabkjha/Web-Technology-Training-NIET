@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+</head>
+<body>
+    <h1>use of nested strict mode</h1>
+<script>
+  'use strict';
+function strict() {
+    //Inside a function always use strict first before anything other 
+    // Function-level strict mode syntax
+    'use strict';
+  
+    function nested() { return 'Javascript Basics to Advance'; }
+  
+    return "strict mode function!  " + nested();
+  }
+  let x=function notStrict() { return "non strict function"; }
+  console.log(x);
+  </script>
+</body>
+</html>

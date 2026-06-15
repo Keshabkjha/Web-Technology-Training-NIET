@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heading</title>
+</head>
+<body>
+    <h1 id="kesha">This is dynamic heading...</h1>
+    <h2>Form </h2>
+
+    <form name="myForm" action="#" onsubmit="return validateForm()" method="post">
+    Name: <input type="text" name="fname">
+    <input type="submit" value="Submit">
+    </form>
+    <img src="appl.gif" alt="apple" id = "photo">
+    <script>
+        const myhead = document.getElementById("kesha");
+        myhead.innerHTML = "Dynamically change heading...";
+        myhead.style.color = "read";
+        myhead.style.fontFamily = "arial";
+        myhead.style.backgroundColor = "yellow";
+        myhead.style.textShadow = "2px 2px 4px rgba(0, 0, 0, 0.5)";
+        myhead.style.transition = "color 2s, font-size 2s, text-shadow 2s";
+        setInterval(() => {
+            myhead.style.color = myhead.style.color === "read"? "blue" : "read";
+            myhead.style.fontSize = myhead.style.fontSize === "24px"? "18px" : "24px";
+            myhead.style.textShadow = myhead.style.textShadow === "2px 2px 4px rgba(0, 0, 0, 0.5)"? "4px 4px 8px rgba(0, 0, 0, 0.5)" : "2px 2px 4px rgba(0, 0, 0, 0.5)";
+            myhead.innerHTML = "Dynamically change heading... " +Date();
+        
+        });
+        function validateForm() {
+        let x = document.forms["myForm"]["fname"].value;
+        if (x == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+        };
+        const photo = document.getElementById("photo");
+        photo.addEventListener("mouseover", function() {
+            photo.src = "orange.gif";
+        });
+
+        photo.addEventListener("mouseout", function() {
+            photo.src = "appl.gif";
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Layout */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Toolbar */
+#toolbar {
+    display: flex;
+    justify-content: center;
+    background-color: var(--header-bg);
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tool-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px;
+    transition: transform 0.2s ease;
+    position: relative;
+}
+
+.tool-button img {
+    width: 32px;
+    height: 32px;
+    filter: invert(1); /* Lightens the icons for dark themes */
+}
+
+.tool-button:hover {
+    transform: scale(1.1);
+}
+
+/* Tooltip on Hover */
+.tool-button::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+}
+
+.tool-button:hover::after {
+    opacity: 1;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Canvas */
+#canvas-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--canvas-border);
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* Chat Section */
+#chat-container {
+    flex: 0 0 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#messages {
+    list-style: none;
+    padding: 10px;
+    border: 1px solid var(--chat-border);
+    flex: 1;
+    overflow-y: auto;
+    background-color: var(--chat-bg);
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+}
