@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Cookie_New">
+        <property name="context-root" value="Cookie_New"/>
+        <property name="java-output-path" value="/Cookie_New/build/classes"/>
+    </wb-module>
+</project-modules>

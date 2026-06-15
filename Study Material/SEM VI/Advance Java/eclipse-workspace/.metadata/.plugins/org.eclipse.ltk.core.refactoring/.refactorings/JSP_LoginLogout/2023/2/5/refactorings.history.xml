@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 5 elements to &apos;WebContent&apos;&#x0D;&#x0A;- Original project: &apos;JSP_LoginLogout&apos;&#x0D;&#x0A;- Destination element: &apos;WebContent&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     logout.jsp&#x0D;&#x0A;     login.jsp&#x0D;&#x0A;     welcome.jsp&#x0D;&#x0A;     error.jsp&#x0D;&#x0A;     home.jsp" description="Copy files" element1="WebContent/logout.jsp" element2="WebContent/login.jsp" element3="WebContent/welcome.jsp" element4="WebContent/error.jsp" element5="WebContent/home.jsp" files="5" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1675331060890" target="/JSPLoginLogout/WebContent" units="0" version="1.0"/>
+</session>

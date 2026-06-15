@@ -1,0 +1,41 @@
+Softwares Required:
+
+* XAMPP Control Panel(on installattion time switch off antivirus).
+* Composer
+* Git Bash
+
+__________________________________
+
+
+xampp control panel:
+apache config :
+change in first file 80 to 8000
+
+apache config:
+change in second file 443 to 1443
+
+
+_______________________________________________
+open gitbash:
+
+follow the following steps:
+
+1. cd c:
+2. cd xampp
+3. cd htdocs
+
+then write folowing command:-
+
+composer create-project laravel/laravel Project Name
+
+after creating project
+
+goto project using cd ProjectName
+
+php artisan serve
+
+run on localhost : 8000
+
+__________________________________________________
+
+

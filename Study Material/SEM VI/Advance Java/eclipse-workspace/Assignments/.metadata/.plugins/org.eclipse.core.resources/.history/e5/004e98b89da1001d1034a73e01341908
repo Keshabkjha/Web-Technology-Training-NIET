@@ -1,0 +1,33 @@
+import java.sql.*;
+
+class UpdateRecord
+{       Statement stmt;
+	Connection con;
+	UpdateRecord()
+	{
+		try
+		{
+			Class.forName("com.mysql.jdbc.Driver");
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/aaravdb","root","aarav");  //test1 is dbname,   root is dbusername and dbpassword
+			
+			 stmt=con.createStatement();  
+			int ret=stmt.executeUpdate("update customer set cadd ='UK' where cname='B'"); 
+                        if(ret==1){
+                        System.out.println("1 row updated!!!"); 
+			}
+			con.close();	
+		}
+
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+         }
+}
+public class update_details
+{
+ public static void main(String[] str)
+ {
+	UpdateRecord obj = new UpdateRecord();
+ }
+}

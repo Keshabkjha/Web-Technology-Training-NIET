@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="myModule">  
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<script src="script.js"></script>
+<body ng-app="myModule">
+    
+<div>
+    {{ "Hello World !!" | uppercase}}
+    <br><br>
+
+    {{ "2000" | currency}}
+    <br><br>
+
+</div>
+
+        <!-- <div ng-controller="myController">
+
+            <div> First Name : {{emp.firstName}}</div>
+            <div> Last Name : {{emp.lastName}}</div>
+            <div> Gender : {{emp.gender}} </div>
+
+    </div>
+
+
+    </div> -->
+
+<div ng-controller="myController">
+    <table>
+        <thead>
+            <tr>
+                <th> FirstName </th>
+                <th> LastName </th>
+                <th> Gender </th>
+                <th> Salary </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="employee in employees">
+                <td> {{ employee.firstName}} </td>
+                <td> {{ employee.lastName}} </td>
+                <td> {{ employee.gender}} </td>
+                <td> {{ employee.salary}} </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file is used for testing purposes -->
+<directory xmlns="http://www.eclipse.org/mylyn/discovery/directory/">
+  <entry
+    url="https://github.com/eclipse-m2e/m2e-discovery-catalog/releases/download/2.x/org.eclipse.m2e.discovery.oss-catalog-2.x.jar" 
+    permitCategories="true" />
+</directory>

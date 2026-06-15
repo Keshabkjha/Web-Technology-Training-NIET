@@ -1,0 +1,65 @@
+import jakarta.servlet.*;
+import jakarta.servlet.http.*;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class Servlet2 extends HttpServlet {
+
+	protected void
+	processRequest(HttpServletRequest request,
+				HttpServletResponse response)
+		throws ServletException, IOException
+	{
+		response.setContentType("text/html;charset=UTF-8");
+		try (PrintWriter out = response.getWriter()) {
+			out.println("<!DOCTYPE html>");
+			out.println("<html>");
+			out.println("<head>");
+			out.println("<title>Servlet Servlet2</title>");
+			out.println("</head>");
+			out.println("<body>");
+			
+			
+			String name = request.getParameter("name");
+			out.println("<h1> Hello, "+ name + "welcome back to my website. </h1>");
+			
+			out.println("<h1> Thank You !!! </h1>");
+
+			out.println("</body>");
+			out.println("</html>");
+
+
+			// Fetching cookies(if found more than one)
+			// Array of Cookies
+			Cookie[] cookies = request.getCookies();
+			boolean f = false;
+			String name = "";
+			if (cookies == null) {
+				out.println(
+					"<h1>You are new user, go to home page and submit your institute's name");
+				return;
+			}
+			else {
+				for (Cookie c : cookies) {
+					String tname = c.getName();
+					if (tname.equals("user_name")) {
+						f = true;
+						name = c.getValue();
+					}
+				}
+			}
+			if (f) {
+				out.println("<h1> Hello, welcome back "
+							+ name + " </h1>");
+				out.println("<h2>Thank you!!</h2>");
+			}
+			else {
+				out.println(
+					"<h1>You are new user, go to home page and submit your institute's name");
+			}
+
+			out.println("</body>");
+			out.println("</html>");
+		}
+	}
+}

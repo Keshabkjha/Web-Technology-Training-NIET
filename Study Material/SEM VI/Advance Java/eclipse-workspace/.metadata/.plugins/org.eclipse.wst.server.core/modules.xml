@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<modules>
+  <module moduleId="org.eclipse.jst.jee.server:Hello_MVC"/>
+  <module moduleId="org.eclipse.jst.jee.server:MyFirstHello" serverId="Tomcat v10.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:HelloCSE_MVC" serverId="Tomcat v10.0 Server at localhost"/>
+</modules>

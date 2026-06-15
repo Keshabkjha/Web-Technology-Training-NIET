@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Wed Feb 01 14:53:51 IST 2023
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\aarav\\eclipse-workspace\\Practice\\Hello_MVC\\WebContent\\WEB-INF\\lib\\spring-web-4.3.9.RELEASE.jar=WEB-INF/lib/spring-web-4.3.9.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\aarav\\eclipse-workspace\\Practice\\MVC\\WebContent\\WEB-INF\\lib\\spring-web-4.3.9.RELEASE.jar=WEB-INF/lib/spring-web-4.3.9.RELEASE.jar

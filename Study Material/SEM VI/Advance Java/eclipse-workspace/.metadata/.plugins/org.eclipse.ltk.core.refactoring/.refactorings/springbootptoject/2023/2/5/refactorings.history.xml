@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;SpringbootptojectApplication.java&apos; to &apos;SpringBootProject/src/main/java/com.onlyjavatech.springbootproject&apos;&#x0D;&#x0A;- Original project: &apos;springbootptoject&apos;&#x0D;&#x0A;- Destination element: &apos;SpringBootProject/src/main/java/com.onlyjavatech.springbootproject&apos;&#x0D;&#x0A;- Original element: &apos;SpringbootptojectApplication.java&apos;" description="Copy file" destination="=SpringBootProject/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.onlyjavatech.springbootproject" element1="src/main/java/com/onlyjavatech/springbootptoject/SpringbootptojectApplication.java" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1675276334889" units="0" version="1.0"/>
+</session>
