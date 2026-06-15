@@ -1,0 +1,5 @@
+1. Download COmposer
+2. Create project
+composer create-project Laravel/Laravel ProjectName
+3. php artisan serve. 
+4. Application Structure

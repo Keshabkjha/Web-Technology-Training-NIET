@@ -1,0 +1,28 @@
+https://www.youtube.com/watch?v=3uRd4NOXT8w
+
+https://www.youtube.com/watch?v=6rr8Jhm1t14
+
+steps
+>download nodejs and install(https://nodejs.org/en/download)
+>check version: npm --v and node --v
+>install typescript on cmd(of VS code terminal): npm install -g typescript
+>chck tyscript version on cmd(of VS code terminal): tsc --v
+>create ts file(app.ts): console.log(10)
+>create index.html file:<script src=app.js"></script>
+>compile:tsc app.ts
+>run .js file:node app.js
+---------------X----------
+---------------------------
+********NOTE*********
+---------------------------
+if tsc --version show error like execution policy than use
+Use tsc.cmd instead of tsc. For example:
+
+tsc.cmd -v
+tsc.cmd --init
+
+
+
+ES6-ECMA Script6
+ECMA-Eropien Computer Manufacture Association
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Footer</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+</head>
+<body>
+    
+    <header>
+        <title class="header">Mithila</title>
+        <img src="SamvadHub.png" alt="Logo" width="100">
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Learn More</a></li>
+                <li><a href="#"> About Us</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Home</h1>
+            <p>This is homepage.</p>
+            <div class="grid-container">
+                <div class="grid-item">ROI</div>
+                <div class="grid-item">YOLO</div>
+                <div class="grid-item">RCNN</div>  
+                <div class="grid-item">Image</div>
+                <div class="grid-item">Encryption</div>
+                <div class="grid-item">object</div>  
+                <div class="grid-item">detection</div>
+                <div class="grid-item">Key</div>
+                <div class="grid-item">gen</div>  
+              </div>
+              
+            
+        </article>
+    </section>
+    <footer>
+        <p> Keshabkjha</p>
+    </footer>
+</body>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    header{
+        background-color: lightblue;
+        text-align: center;
+        padding: 20px;
+        font-size: 25px;
+        color: wheat;
+    }
+    nav{
+        float: left;
+        width: 10%;
+        height: 300px;
+        background: #fff;
+        padding: 20px;
+    }
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    article{
+        float: left;
+        padding: 20px;
+        width: auto;
+        height: auto;
+        background-color: #f1f1f1;
+
+    }
+    footer{
+        background-color: lightblue;
+        padding: 10px;
+        text-align: center;
+        font-size: 20px;
+        color: rgb(119, 17, 17);
+
+    }
+    section::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .grid-container {
+    display: grid;
+    gap: 50px 100px;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+    }
+
+    .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    }
+
+</style>
+</html>
